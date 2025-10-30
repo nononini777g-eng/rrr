@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asonyx Portfolio - Award-winning 3D web design, digital solutions, and media projects showcasing creativity and innovation.">
+    <meta name="theme-color" content="#0f172a">
+    <title>Portfolio - Asonyx 3D Digital Solutions</title>
+    <!-- Font Awesome for Icons (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo" aria-label="Asonyx Home">ASONYX</a>
+                <div class="nav-links">
+                    <a href="index.html#services" class="nav-link">Services</a>
+                    <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <section class="portfolio-header">
+        <div class="container">
+            <h1 class="page-title">Our <span class="text-cyan">Portfolio</span></h1>
+            <p class="page-subtitle">Explore our collection of award-winning projects showcasing creativity, innovation, and technical excellence across diverse industries</p>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons" role="group" aria-label="Project filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="3d">3D Web Design</button>
+                <button class="filter-btn" data-filter="digital">Digital Solutions</button>
+                <button class="filter-btn" data-filter="media">Media & Content</button>
+                <button class="filter-btn" data-filter="uiux">UI/UX Design</button>
+                <button class="filter-btn" data-filter="brand">Brand Strategy</button>
+                <button class="filter-btn" data-filter="animation">Animation & VFX</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <!-- Projects are dynamically populated by portfolio.js -->
+            <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+    </section>
+
+    
+
+
+    <!-- Testimonials Section - Updated for Card Flip Design -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Client <span class="text-purple">Testimonials</span></h2>
+            <p class="section-subtitle">What our satisfied partners say about working with us</p>
+
+            <!-- Stellar 3D Slide Navigator Structure -->
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- Slides will be dynamically populated by portfolio.js -->
+                </div>
+            </div>
+
+            <!-- Navigation Controls -->
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" id="prevBtn" aria-label="Previous testimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-dots" id="carouselDots">
+                    <!-- Dots will be populated by portfolio.js -->
+                </div>
+                <button class="carousel-btn next" id="nextBtn" aria-label="Next testimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Let's create something amazing together</p>
+            <a href="index.html#booking" class="btn btn-primary">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Asonyx. All rights reserved. | Website Creation • Digital Solutions • Media Agency</p>
+            <div class="footer-links">
+                <a href="https://instagram.com/asonyxmedia" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="mailto:asonyxmedia@gmail.com">Email</a>
+                <a href="tel:+919617672330">Phone</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Side Menu -->
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="index.html#booking" class="nav-link">Book Website</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+    </div>
+
+    <!-- Portfolio JavaScript File -->
+    <script src="portfolio.js"></script>
+</body>
+</html>
